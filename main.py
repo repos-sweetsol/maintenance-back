@@ -14,6 +14,14 @@ CONN_ARGS = {
     "password": "z9U9HqXfEayEilTHZ1DO9sPiB2dQJsrn"
 }
 
+# CONN_ARGS = {
+#     "host": "localhost",
+#     "port": "5432",
+#     "dbname": "sweetsol",
+#     "user": "postgres",
+#     "password": "postgres"
+# }
+
 
 app = FastAPI()
 app.add_middleware(
