@@ -7,11 +7,11 @@ from datetime import datetime
 
 
 CONN_ARGS = {
-    "host": "dpg-convupcf7o1s73djs5n0-a",
-    "port": "5432",
-    "dbname": "sweetsol",
-    "user": "sweetsol",
-    "password": "z9U9HqXfEayEilTHZ1DO9sPiB2dQJsrn"
+    "host": "_HOST_HERE_",
+    "port": "_PORT_HERE_",
+    "dbname": "_DBNAME_HERE_",
+    "user": "_USER_HERE_",
+    "password": "_PASSWORD_HERE_"
 }
 
 # CONN_ARGS = {
