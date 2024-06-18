@@ -1,3 +1,5 @@
+import os
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -6,12 +8,18 @@ import psycopg as pg
 from datetime import datetime
 
 
+DB_HOSTNAME = os.environ.get( "DB_HOSTNAME" )
+DB_PORT = os.environ.get( "DB_HOSTNAME" )
+DB_NAME = os.environ.get( "DB_HOSTNAME" )
+DB_USER = os.environ.get( "DB_HOSTNAME" )
+DB_PASSWORD = os.environ.get( "DB_HOSTNAME" )
+
 CONN_ARGS = {
-    "host": "_HOST_HERE_",
-    "port": "_PORT_HERE_",
-    "dbname": "_DBNAME_HERE_",
-    "user": "_USER_HERE_",
-    "password": "_PASSWORD_HERE_"
+    "host": DB_HOSTNAME,
+    "port": DB_PORT,
+    "dbname": DB_NAME,
+    "user": DB_USER,
+    "password": DB_PASSWORD
 }
 
 # CONN_ARGS = {
